@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{lmodern}
+% \usepackage{concmath}
+ \renewcommand{\seriesdefault}{m}
+\usepackage{lmodern}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\vspace*{-0.65in} % Adjust this value as needed
+\begin{center}
+    \textbf{\scshape Mustaeen Ahmed} \\ \vspace{1pt}
+    \href{https://mustaeen.dev}{\ul{mustaeen.dev}} $|$ 
+    \href{mailto:contact@mustaeen.dev}{\ul{contact@mustaeen.dev}} $|$ 
+    \href{https://linkedin.com/in/mustaeenahmed}{\ul{linkedin.com/in/mustaeenahmed}} $|$
+    \href{https://github.com/must108}{\ul{github.com/must108}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace*{-0.24in} % Adjust this value as needed
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{Orlando, FL}
+      {Bachelor of Science in Computer Science}{Aug 2023 - May 2027}
+      
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Quantitative Software Engineer Intern}{June 2025 - Present}
+      {Morgan Stanley}{New York, NY}
+      \resumeItemListStart
+          \resumeItem{Migrated a \textbf{C++} quant. trading app to the web, improving \textbf{UX} by \textbf{99\%}, and reducing loading speeds by \textbf{50\%}.}
+          \resumeItem{Developed \textbf{Python} scripts for risk management, improving report quality by \textbf{45\%} by integrating market data.}
+          \resumeItem{Implemented an interpreter for \textbf{Intex Deal Modeling Language}, improving deal processing speeds by \textbf{200\%}.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer Intern}{March 2025 - Present}
+      {Ideaflow}{Palo Alto, CA}
+      \resumeItemListStart
+            \resumeItem{Developed a \textbf{graph-based}, ML-powered note-taking application, which allows for AI-powered connection of ideas.}
+          \resumeItem{Optimized a \textbf{semantic linking} implementation, reducing note retrieval time by \textbf{35\%}, and precision by \textbf{25\%}.}
+          \resumeItem{Engineered \textbf{machine learning} solutions for analyzing and clustering notes, achieving \textbf{85\%} cluster purity and reducing manual grouping by \textbf{40\%}.}
+          \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer Intern}{January 2025 - March 2025}
+      {U.S. Department of Transportation}{Washington, D.C.}
+      \resumeItemListStart
+        \resumeItem{Developed and deployed a scalable web application with \textbf{AWS CDK (Cloud Dev. Kit)} and \textbf{TypeScript}.}
+        \resumeItem{Reduced backend response time by \textbf{54\%} by leveraging \textbf{RESTful APIs} with \textbf{Amazon API Gateway}.} 
+        \resumeItem{Improved communications efficiency by crafting solutions to handle \textbf{B2B Data Interchange} with \textbf{Amazon S3}.}
+        \resumeItem{Developed a vessel tracking interface with \textbf{AWS Lambda} and \textbf{DynamoDB}, improving port scheduling operations by \textbf{28\%}, and port throughput by \textbf{44\%}.}
+    \resumeItemListEnd
+      \resumeSubheading
+      {Software Engineer Intern}{September 2024 - May 2025}
+      {Leidos}{Orlando, FL}
+      \resumeItemListStart
+        \resumeItem{Researched solutions for advancing the field of \textbf{spatial intelligence}, focusing on generating complex relationships between visual data and language by leveraging \textbf{LLMs}, \textbf{Q-Formers}, and \textbf{Hugging Face Transformers}.}
+        \resumeItem{Fine-tuned \textbf{machine learning} models for \textbf{vision-language pre-training}, increasing model efficiency by \textbf{37\%}.}
+        \resumeItem{Constructed \textbf{data scraping} tools with \textbf{Python}, automating data collection and increasing productivity by \textbf{20\%}.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer Intern}{June 2024 - November 2024}
+      {Darden}{Orlando, FL}
+      \resumeItemListStart
+        \resumeItem{Engineered several \textbf{Python} applications for automation, saving \textbf{400+} work hours and \textbf{\$10000+} per quarter.}
+        \resumeItem{Leveraged \textbf{machine learning} powered packages such as \textbf{OpenCV}, \textbf{scikit-image}, and \textbf{PyTesseract} for use in robust error handling, decreasing errors by \textbf{94\%}, and increasing application efficiency by \textbf{49\%}.}
+        \resumeItem{Performed efficient \textbf{data engineering}, reducing code complexity by \textbf{63\%}, and application runtime by \textbf{26\%}.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\vspace*{-0.15in} % Adjust this value as needed
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/KnightHacks/forge}{Knight Hacks Monorepo}} $|$ \emph{Next.js, React, TypeScript, SQLite, Tailwind CSS, tRPC, Drizzle ORM}}{June 2021 -- Present}
+        \resumeItemListStart
+        \resumeItem{Implemented a multi-purpose Discord bot with \textbf{25+} useful commands to serve a club chat with \textbf{4000+} members.}
+        \resumeItem{Architected a website for club registration with \textbf{React}, serving \textbf{1500+} students and \textbf{10+} company sponsors.}
+        \resumeItem{Facilitated development of new tooling architecture, increasing \textbf{DX} by \textbf{80\%} and developer efficiency by \textbf{90\%}.}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{\href{https://devpost.com/software/guitar-o3gw19}{GuitAR}} $|$ \emph{C\#, C++, Unity, Meta SDK, Algorithms, Audio Classification }}{June 2021 -- Present}
+        \resumeItemListStart
+          \resumeItem{\textbf{2nd place winner} of the "Best Overall" category at Knight Hacks 2024, surpassing \textbf{102} submitted projects.}
+          \resumeItem{Developed a highly-interactive, educational mixed reality application for learning and practicing the guitar.}
+          \resumeItem{Designed an \textbf{audio classification} algorithm which converts audio frequencies to binary data for note validation.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/naavis-app/app}{Naavis}} $|$ \emph{Next.js, React, TypeScript, PostgreSQL, Prisma, Redis, Amazon Web Services, tRPC, Tailwind CSS, Jest}}{June 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a location sharing web application which allows users to track locations of group members and devices.}
+            \resumeItem{Implemented authentication with \textbf{TypeScript} and \textbf{AWS Cognito}, allowing third-party and regular sign-in.}
+            \resumeItem{Used \textbf{Amazon S3}, \textbf{tRPC}, and \textbf{RESTful APIs} for assets, reducing query speed by \textbf{53\%}, and latency by \textbf{87\%}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%
+
+  %-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, R, C, C++, C\#, Java, Go, HTML, CSS, PowerShell, Bash, SQL} \\
+     \textbf{Frameworks}{: React, Angular, Spring Boot, Next.js, Astro, Node.js, Express.js, Tailwind CSS, tRPC, Bootstrap} \\
+     \textbf{Libraries}{: scikit-learn, PyTorch, TensorFlow, Keras, NumPy, Pandas, Matplotlib, Flask, Django, OpenCV} \\
+     \textbf{Tools}{: Git, Jira, AWS, Microsoft Azure, Prisma, Redis, Docker, MongoDB, Jupyter Notebook, Linux} \\
+    \textbf{Concepts}{: Machine Learning, Full-Stack Development, Computer Vision,
+    Cloud Computing, DevOps, Agile/Scrum, Frontend, Backend, Data Science, Software Engineering} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
