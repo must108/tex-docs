@@ -1,0 +1,214 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{lmodern}
+% \usepackage{concmath}
+ \renewcommand{\seriesdefault}{m}
+\usepackage{lmodern}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\vspace*{-0.65in} % Adjust this value as needed
+\begin{center}
+    \textbf{\scshape Mustaeen Ahmed} \\ \vspace{1pt}
+    \href{https://mustaeen.dev}{\ul{mustaeen.dev}} $|$ 
+    \href{mailto:contact@mustaeen.dev}{\ul{contact@mustaeen.dev}} $|$ 
+    \href{https://linkedin.com/in/mustaeenahmed}{\ul{linkedin.com/in/mustaeenahmed}} $|$
+    \href{https://github.com/must108}{\ul{github.com/must108}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace*{-0.24in} % Adjust this value as needed
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{Orlando, FL}
+      {Bachelor of Science in Computer Science}{Aug 2023 - May 2027}
+      
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading 
+      {Software Engineer Intern}{Jan 2026 - Present}
+      {Cloudflare}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built, owned, and shipped \textbf{4+} high-impact \textbf{end-to-end} features for Cloudflare's \textbf{beta} product, \textbf{Containers}.}
+        \resumeItem{Scaled and architected a \textbf{10x} increase in container resource limits, expanding usability for \textbf{enterprise customers} and unlocking a projected revenue impact of \textbf{\$250M+}, while maintaining \textbf{99.9\%} system stability.}
+        \resumeItem{Implemented regional deployment constraints for \textbf{Containers}, reducing latency by \textbf{87\%} via city-level targeting.}
+        \resumeItem{Introduced jurisdiction-based constraints for \textbf{Containers}, unblocking adoption by \textbf{public sector} clients and supporting a projected revenue impact of \textbf{\$175M+}.}
+    \resumeItemListEnd
+    \resumeSubheading 
+      {Software Engineer Intern}{Nov 2025 - Jan 2026}
+      {Handshake}{San Francisco, CA}
+      \resumeItemListStart
+          \resumeItem{Optimized multimodal pipelines with \textbf{LangChain} and \textbf{Python}, improving downstream task accuracy by \textbf{19\%}.}
+          \resumeItem{Applied \textbf{diffusion models} for \textbf{synthetic data} generation, improving efficiency by scaling dataset size by \textbf{300\%}.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Quantitative Software Engineer Intern}{Jun 2025 - Aug 2025}
+      {Morgan Stanley}{New York, NY}
+      \resumeItemListStart
+          \resumeItem{Migrated a \textbf{C++} quantitative trading platform to the web, reducing latency by \textbf{50\%}, and integrated \textbf{Grafana}.}
+          \resumeItem{Developed \textbf{Python} pipelines for risk management, integrating market data and improving report quality by \textbf{45\%}.}
+          \resumeItem{Implemented an interpreter for \textbf{Intex Deal Modeling Language}, improving deal processing speeds by \textbf{200\%}.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer Intern}{Jan 2025 - Mar 2025}
+      {U.S. Department of Transportation}{Washington, D.C.}
+      \resumeItemListStart
+        \resumeItem{Built and deployed a scalable web application with \textbf{AWS CDK}, \textbf{Lambda}, and \textbf{S3} for real-time data processing.}
+        \resumeItem{Leveraged \textbf{RESTful APIs} with \textbf{Amazon API Gateway} and \textbf{DynamoDB}, reducing backend latency by \textbf{54\%}.}
+        \resumeItem{Developed a vessel tracking interface, improving port scheduling operations by \textbf{28\%} and port throughput by \textbf{44\%}.}
+    \resumeItemListEnd
+      \resumeSubheading
+      {Software Engineer Intern}{Sep 2024 - Dec 2024}
+      {Leidos}{Orlando, FL}
+      \resumeItemListStart
+        \resumeItem{Engineered multimodal pipelines with \textbf{Transformers}, improving visual-language performance in \textbf{LLMs} by \textbf{22\%}.}
+        \resumeItem{Fine-tuned \textbf{vision-language} and \textbf{machine learning} models for \textbf{pre-training}, increasing efficiency by \textbf{37\%}.}
+        \resumeItem{Constructed \textbf{data scraping} tools with \textbf{Python}, automating data collection and increasing productivity by \textbf{20\%}.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\vspace*{-0.15in} % Adjust this value as needed
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/KnightHacks/forge}{\underline{Knight Hacks Monorepository}}} $|$ \emph{Next.js, React, TypeScript, SQLite, Tailwind CSS, tRPC, Drizzle ORM}}{June 2021 -- Present}
+        \resumeItemListStart
+        \resumeItem{Architected a website for club registration with \textbf{React}, serving \textbf{2000+} students and \textbf{20+} company sponsors.}
+        \resumeItem{Facilitated development of new tooling architecture, increasing \textbf{DX} by \textbf{80\%}, and developer efficiency by \textbf{90\%}.}
+        \resumeItem{Implemented a multi-purpose chat bot with \textbf{25+} useful commands to serve a club chat of \textbf{5000+} members.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://devpost.com/software/agentnow}{\underline{AgentNow}}} $|$ \emph{Next.js, React, TypeScript, Google Cloud, Python, FastAPI, Eleven Labs, RAG, Machine Learning}}{June 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Placed 2nd} out of \textbf{20+} competitors for \textbf{ServiceNow's Agentic AI} challenge at Knight Hacks 2025.}
+            \resumeItem{Deployed a \textbf{retrieval-augmented generation} API with \textbf{Google Cloud}, reducing enterprise costs by \textbf{80\%}.}
+            \resumeItem{Built a tool to assist enterprise clients with product selection, consultants with sales, and sales analytics.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{\href{https://devpost.com/software/guitar-o3gw19}{\underline{GuitAR}}} $|$ \emph{C\#, Unity, Meta SDK, Algorithms, Audio Classification }}{June 2021 -- Present}
+        \resumeItemListStart
+          \resumeItem{\textbf{2nd place winner} of the \textbf{Best Overall} category at Knight Hacks 2024, surpassing \textbf{102} submitted projects.}
+          \resumeItem{Architected an educational mixed reality application for learning and practicing the guitar, with \textbf{15+} lessons.}
+          \resumeItem{Designed an \textbf{audio classification} algorithm which converts audio frequencies to binary data for note validation.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%
+
+  %-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, R, C, C++, C\#, Java, Go, HTML, CSS, GLSL, SQL} \\
+     \textbf{Frameworks}{: React, Angular, Spring Boot, Next.js, Node.js, Express.js, Tailwind CSS, tRPC} \\
+     \textbf{Libraries}{: scikit-learn, PyTorch, TensorFlow, NumPy, Pandas, Flask, Django, OpenCV} \\
+     \textbf{Tools}{: Git, Cloudflare, Amazon Web Services, Microsoft Azure, Google Cloud Platform, Redis, Docker, MongoDB, Jupyter Notebook, Linux, Kubernetes} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
