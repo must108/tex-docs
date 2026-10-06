@@ -1,0 +1,192 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{soul}
+\usepackage{setspace}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\renewcommand{\seriesdefault}{m}
+\usepackage{lmodern}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\vspace*{-0.65in}
+\begin{center}
+    \textbf{\scshape Mustaeen Ahmed} \\ \vspace{1pt}
+    \href{https://mustaeen.dev}{\ul{mustaeen.dev}} $|$ 
+    \href{mailto:contact@mustaeen.dev}{\ul{contact@mustaeen.dev}} $|$ 
+    \href{https://linkedin.com/in/mustaeenahmed}{\ul{linkedin.com/in/mustaeenahmed}} $|$
+    \href{https://github.com/must108}{\ul{github.com/must108}} 
+\end{center}
+
+%-----------EDUCATION-----------
+\vspace*{-0.24in}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Central Florida}{Orlando, FL}
+      {Bachelor of Science in Computer Science}{May 2028}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading 
+      {Software Engineer Intern}{Sep 2026 - Dec 2026}
+      {Tesla}{Fremont, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and built \textbf{4+} features for a single-pane-of-glass (\textbf{SPoG}) observability platform for \textbf{Tesla Autopilot}.}
+        \resumeItem{Automated \textbf{RBAC} provisioning for Tesla's \textbf{AI Infrastructure} with \textbf{Microsoft Graph}, cutting approval time from \textbf{10+ minutes} to under \textbf{30 seconds}.}
+        \resumeItem{Built an \textbf{MCP} server for \textbf{Grafana} knowledge objects, cutting object creation time by \textbf{80\%} and PR time by \textbf{90\%}.}
+        \resumeItem{Delivered a self-service \textbf{Grafana} access portal automating \textbf{3000+} annual requests for \textbf{5000+} engineers, saving \textbf{900+} hours annually.}
+      \resumeItemListEnd
+
+    \resumeSubheading 
+      {Software Engineer Intern}{Jun 2026 - Aug 2026}
+      {Amazon}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Designed, built, owned, and shipped \textbf{2+} projects for the \textbf{Prime Video Recommendations} team.}
+        \resumeItem{Developed recommendation components for the \textbf{Amazon.com} homepage, serving \textbf{200M+} customers monthly, \textbf{90M+} customers daily, and handling \textbf{55K+} transactions per second with \textbf{deep learning} methods.}
+        \resumeItem{Rewrote and optimized a \textbf{Lambda-based} image filtering service with a \textbf{DynamoDB} cache and \textbf{Apache Spark} jobs on \textbf{Apache Hive}, increasing pipeline throughput by \textbf{46x} and reducing API latency by \textbf{70\%}.}
+        \resumeItem{Instrumented \textbf{CloudWatch} for observability, ensuring \textbf{99.99\%} service availability across \textbf{390M+} daily requests.}
+      \resumeItemListEnd
+
+    \resumeSubheading 
+      {Software Engineer Intern}{Jan 2026 - Apr 2026}
+      {Cloudflare}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Built, owned, and shipped \textbf{4+} high-impact \textbf{end-to-end} features for Cloudflare's \textbf{beta} product, \textbf{Containers}.}
+        \resumeItem{Scaled and architected a \textbf{15x} increase in container resource limits, leading to an enterprise contract of \textbf{\$130M} and generating \textbf{\$100K+} in revenue from users deploying production \textbf{AI agent} workloads.}
+        \resumeItem{Implemented regional and jurisdictional deployment constraints for \textbf{Containers} and \textbf{Workers}, reducing latency by up to \textbf{87\%}.}
+        \resumeItem{Eliminated redundant updates in \textbf{Durable Objects} via state change detection, reducing writes by \textbf{57\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading 
+      {Software Engineer Intern}{Oct 2025 - Dec 2025}
+      {Handshake}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Optimized multimodal pipelines with \textbf{LangChain} and \textbf{Python}, improving downstream task accuracy by \textbf{19\%}.}
+        \resumeItem{Applied \textbf{diffusion models} for \textbf{synthetic data} generation, scaling dataset size by \textbf{300\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Sep 2024 - Dec 2024}
+      {Leidos}{Orlando, FL}
+      \resumeItemListStart
+        \resumeItem{Researched \textbf{spatial intelligence} by modeling relationships between visual data and language using \textbf{LLMs}, \textbf{Q-Formers}, and \textbf{Hugging Face Transformers}.}
+        \resumeItem{Fine-tuned \textbf{vision-language} models for \textbf{pre-training}, increasing model efficiency by \textbf{37\%}.}
+        \resumeItem{Engineered multimodal pipelines with \textbf{Transformers}, improving visual-language performance in \textbf{LLMs} by \textbf{22\%}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE-----------
+\vspace*{-0.15in}
+\section{Open Source}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/ClickHouse/clickhouse-go}{\ul{ClickHouse}}} $|$ \emph{Go, ClickHouse, Database Drivers, HTTP, Batching, Compression, Distributed Systems}}{June 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Authored and merged \textbf{3+} pull requests to \textbf{ClickHouse}, improving compression, security, and batch ingestion.}
+        \resumeItem{Reviewed and merged \textbf{4+} pull requests as a core open source maintainer, supporting new features and fixes.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/open-telemetry/opentelemetry-collector-contrib}{\underline{OpenTelemetry Collector}}} $|$ \emph{Go, Prometheus, OpenTelemetry, Observability}}{June 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Contributed \textbf{3+} open source pull requests to \textbf{OpenTelemetry}, enhancing reliability and correctness.}
+        \resumeItem{Enabled re-aggregation for data receivers, ensuring \textbf{100\%} aggregation completeness and eliminating partial data.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Go, Java, SQL, TypeScript, C, JavaScript, R, C\#, HTML, CSS} \\
+     \textbf{ML / Data}{: PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, OpenCV, Hugging Face Transformers, LangChain, Apache Spark, Apache Hive, Hadoop, Jupyter Notebook} \\
+     \textbf{Frameworks}{: FastAPI, React, Angular, Spring Boot, Next.js, Node.js, Express.js, Tailwind CSS, tRPC} \\
+     \textbf{Tools}{: Git, Docker, Kubernetes, AWS, GCP, Microsoft Azure, Grafana, Prometheus, OpenTelemetry, ClickHouse, Redis, PostgreSQL, MongoDB, Linux} \\
+    }}
+ \end{itemize}
+
+\end{document}
